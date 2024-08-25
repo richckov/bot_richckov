@@ -63,7 +63,7 @@ def handle_confirmation(message, review_text):
 
 def send_msg_to_channel(message, review_text):
     bot.send_message(-1001960128084, review_text)
-    bot.send_message(message.chat.id, "Ваш отзыв успешно опубликован!")
+    bot.send_message(message.chat.id, "Ваш отзыв успешно опубликован на канале @karmanniy_repetitor!")
 
 
 def is_user_subscribed(user_id):
@@ -74,7 +74,7 @@ def is_user_subscribed(user_id):
         if chat_member.status in ['member', 'administrator', 'creator']:
             return True
     except Exception as e:
-        print(f"Ошибка при проверке подписки: {e}")
+        print(f"Ошибка при проверке подписки: {e}\nОбпатитесь к Евгению @richckov")
     return False
 
 
